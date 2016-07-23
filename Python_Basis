@@ -1,0 +1,74 @@
+print'I\'m OK'
+
+print r'\\\t\\'
+
+print'''linel
+line2
+line3'''
+
+a = 'ABC'
+b = a
+a = 'XYZ'
+print b
+
+age = raw_input('please import your age :')
+if age >=18:
+    print 'your age is', age
+    print 'adult'
+elif age >= 6:
+	print 'teenager'
+else:
+	print 'kid'
+
+names = ['Michael','Bob','Tracy']
+for name in names:
+	print name
+
+sum = 0
+for x in [1,2,3,4,5,6,7,8,9,10]:
+	sum = sum + x
+print sum
+
+sum = 0
+n = 100
+while n > 0:
+	sum = sum + n
+	n = n - 1
+
+d = {'Michael':70,'Tik' : 80, 'Mint' : 91}
+d['Michael']
+d['Tik'] = 85
+d
+'Tik' in d 
+d.get('Mint',87) #已存在Key,无法通过d.get进行重新赋值
+d.pop('Michael')
+d
+
+s = set([1,2,3])
+s
+s.add(4)
+s
+s.add(4)
+s
+s.remove(4)
+s
+s1 = set([1,2,3])
+s2 = set([2,3,4])
+s1 & s2
+s1 | s2
+m = set([1,2,[3,4]])
+m
+n = set([1,2,['X','Y']])
+n
+
+a = ['c','b','a']
+a.sort()
+a
+
+a = 'xyz'
+b = a.replace('x','A')
+a
+b
+
+d = {(1,2,3) : 70}
+d = {(1,[2,3]):85}
